@@ -9,7 +9,6 @@ spec:
     application: docker.io/confluentinc/cp-server:8.1.0
     init: confluentinc/confluent-init-container:3.1.0
   replicas: 1
-  # Removed metricsClient — circular dependency: C3 isn't up when KRaftController initializes
 ---
 apiVersion: platform.confluent.io/v1beta1
 kind: Kafka
